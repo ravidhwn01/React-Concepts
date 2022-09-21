@@ -1,4 +1,4 @@
-import React ,{useState} from 'react'
+import React ,{useState,useEffect} from 'react'
 
 
 const App  = ()=>{
@@ -6,6 +6,12 @@ const App  = ()=>{
   const increase = ()=>{
     setNum(num +1)
   }
+  useEffect(() => {
+    
+  document.title = `you clicked me ${num} times `;
+   
+  })
+  
   return(
 
 <>
